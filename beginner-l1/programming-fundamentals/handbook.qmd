@@ -1,0 +1,35 @@
+---
+title: "Programming Fundamentals"
+subtitle: "Beginner Level 1 — Module Handbook"
+author: "Nebula Code Academy"
+format:
+  html:
+    theme: ../../_theme/nebula.scss
+    toc: true
+  pdf:
+    toc: true
+    number-sections: true
+params:
+  level: "Beginner L1"
+  duration: "8 weeks"
+  badge: "Logic Launchpad"
+---
+
+> **Tagline:** *Think logically. Code clearly. Start building.*
+
+## Module Information
+- **Module Type:** Core (part of Beginner Program) — may be offered standalone  
+- **Duration:** {{< param duration >}} · 12 lessons · 2 mini‑projects + 1 capstone  
+- **Badge Earned:** **{{< param badge >}}**
+
+## Overview
+This module introduces the building blocks of programming using **Python** and **JavaScript**. Learners write clean, functional programs, practice debugging, and build small interactive features for the web.
+
+## Learning Outcomes
+{{< include ../../_partials/outcomes.md >}}
+
+## Tools
+{{< include ../../_partials/tools.md >}}
+
+## Rubric
+{{< include ../../_partials/rubric.md >}}

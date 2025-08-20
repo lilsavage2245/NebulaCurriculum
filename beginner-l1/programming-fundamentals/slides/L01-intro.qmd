@@ -1,0 +1,49 @@
+---
+title: "L1 — What is Programming?"
+format:
+  revealjs:
+    theme: ../../../_theme/nebula-reveal.scss
+    slide-number: true
+    incremental: true
+    controls: true
+---
+
+## Welcome
+- The web of ideas → code
+- CLI vs Browser
+- Python vs JavaScript (mental model)
+
+---
+
+## Goals for Today
+1. Understand what a program is
+2. Run a Python script
+3. Run a small JS in the browser
+
+---
+
+## Python: Hello, World!
+```python
+print("Hello, World!")
+```
+
+**Exercise:** edit the message and run again.
+
+---
+
+## JavaScript: Hello, DOM!
+```html
+<button id="btn">Click me</button>
+<script>
+  document.getElementById('btn').addEventListener('click', () => {
+    alert('Hello from JS!');
+  });
+</script>
+```
+
+---
+
+## Recap
+- Programs are instructions
+- Python great for CLI logic
+- JS controls the browser DOM

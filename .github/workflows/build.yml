@@ -1,0 +1,60 @@
+name: Build & Publish Curriculum
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.qmd'
+      - '_theme/**'
+      - '_partials/**'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Install TinyTeX (for PDF)
+        run: quarto install tinytex --no-prompt
+      - name: Render
+        run: quarto render
+      - name: Upload Site Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Install TinyTeX (for PDF)
+        run: quarto install tinytex --no-prompt
+      - name: Publish to GitHub Pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  upload-to-django:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && vars.ENABLE_DJANGO_UPLOAD == '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
+      - name: Upload PDFs to Django LMS
+        env:
+          DJANGO_API_BASE: ${{ secrets.DJANGO_API_BASE }}
+          DJANGO_TOKEN: ${{ secrets.DJANGO_TOKEN }}
+          MODULE_SLUG: beginner-program-beg-level-1-core-foundations  # example
+        run: |
+          python3 scripts/upload_to_django.py

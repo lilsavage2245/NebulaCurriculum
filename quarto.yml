@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 4200
+    open: true
+
+website:
+  title: "Nebula Curriculum"
+  navbar:
+    left:
+      - text: "Beginner L1"
+        menu:
+          - text: "Programming Fundamentals (Handbook)"
+            href: beginner-l1/programming-fundamentals/handbook.qmd
+          - text: "L1 Intro Slides"
+            href: beginner-l1/programming-fundamentals/slides/L01-intro.qmd
+
+format:
+  html:
+    theme: _theme/nebula.scss
+    toc: true
+  pdf:
+    toc: true
+    number-sections: true
+
+# Allow diagrams and callouts if needed
+filters:
+  - quarto

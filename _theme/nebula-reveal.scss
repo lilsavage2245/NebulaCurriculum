@@ -1,0 +1,17 @@
+/* Nebula Reveal.js theme overrides */
+.reveal {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #101012;
+}
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #150879;
+  font-weight: 700;
+}
+.reveal a { color: #150879; }
+.reveal section img {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(16,16,18,.12);
+}
+.reveal .slides {
+  border-top: 6px solid #FFC940;
+}
