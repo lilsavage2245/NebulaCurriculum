@@ -1,0 +1,11 @@
+# Quarto build output
+_site/
+.quarto/
+
+# OS/editor
+.DS_Store
+*.code-workspace
+
+# Python/R junk if you ever use them
+__pycache__/
+*.Rproj.user/
