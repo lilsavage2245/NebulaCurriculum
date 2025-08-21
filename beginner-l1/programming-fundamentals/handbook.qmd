@@ -13,23 +13,44 @@ params:
   level: "Beginner L1"
   duration: "8 weeks"
   badge: "Logic Launchpad"
+filters: []
 ---
 
 > **Tagline:** *Think logically. Code clearly. Start building.*
 
+::: {.callout-tip}
+**Who this is for:** Absolute beginners.  
+**Prerequisites:** Basic computer literacy.
+:::
+
 ## Module Information
 - **Module Type:** Core (part of Beginner Program) — may be offered standalone  
-- **Duration:** {{< param duration >}} · 12 lessons · 2 mini‑projects + 1 capstone  
-- **Badge Earned:** **{{< param badge >}}**
+- **Duration:** {{< meta duration >}} · 12 lessons · 2 mini-projects + 1 capstone  
+- **Badge Earned:** **{{< meta badge >}}**
+- Delivery: Live + self-paced  
+- Outcomes: See [Learning Outcomes](#learning-outcomes)
 
 ## Overview
 This module introduces the building blocks of programming using **Python** and **JavaScript**. Learners write clean, functional programs, practice debugging, and build small interactive features for the web.
 
-## Learning Outcomes
-{{< include ../../_partials/outcomes.md >}}
+### What You’ll Learn
+1. Variables & Data Types  
+2. Control Flow  
+3. Functions & Modules  
+4. Debugging Basics
 
 ## Tools
 {{< include ../../_partials/tools.md >}}
 
-## Rubric
+## Learning Outcomes {#learning-outcomes}
+{{< include ../../_partials/outcomes.md >}}
+
+## Assessment & Rubric
 {{< include ../../_partials/rubric.md >}}
+
+## Reading List
+- Automate the Boring Stuff with Python (Ch. 1–3)
+- Python Docs: Official Tutorial (sections 3–5)
+
+## Appendix
+- Class etiquette & submission guidelines

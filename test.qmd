@@ -1,0 +1,6 @@
+---
+title: "Test Quarto File"
+format: html
+---
+
+This is a minimal test file for Quarto rendering.

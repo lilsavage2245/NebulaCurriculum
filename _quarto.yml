@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+  preview:
+    port: 4200
+    browser: true
+
+website:
+  title: "Nebula Curriculum"
+  navbar:
+    left:
+      - text: "Beginner L1"
+        menu:
+          - text: "Programming Fundamentals (Handbook)"
+            href: beginner-l1/programming-fundamentals/handbook.qmd
+          - text: "L01 Slides"
+            href: beginner-l1/programming-fundamentals/slides/L01-intro.qmd
+          - text: "Worksheet 01"
+            href: beginner-l1/programming-fundamentals/worksheets/worksheet-01.qmd
+
+format:
+  html:
+    theme: 
+      - default
+      - _theme/nebula.scss
+    toc: true
+    toc-title: "On this page"
+    code-copy: true
+    number-sections: true
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    number-sections: true
+  docx:
+    reference-doc: _theme/nebula-reference.docx
+  
+
+execute:
+  freeze: auto        # caches outputs to .quarto/project-cache
+  echo: false         # default hide code (can override per-file)
+
+# Make 'slides' qmd render as revealjs by default using glob
+metadata-files: []
+  # none; we’ll set per-file format in YAML front-matter
+
+resource-path: [".", "_theme", "_partials"]
+
+# Allow diagrams and callouts if needed
+filters:
+  - quarto

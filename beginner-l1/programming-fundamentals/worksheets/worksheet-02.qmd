@@ -1,0 +1,109 @@
+---
+title: "Worksheet 02 — Variables, Types & Input/Output"
+subtitle: "Beginner L1 · Programming Fundamentals"
+format:
+  docx: default     # primary student format (editable)
+  pdf: default      # optional printable
+number-sections: false
+---
+
+> **Instructions:** Type your answers directly in the gray boxes (or replace `[ ]` with `[x]` for checkboxes). Save as **DOCX** and upload on your dashboard.
+
+---
+
+## 1) Concept Check — Multiple Choice (select one)
+
+**Q1.** Which best describes a *variable*?
+- [ ] A fixed value that never changes during program execution  
+- [ ] A reserved keyword the language uses internally  
+- [x] A named storage location that can hold a value *(choose this if correct)*  
+- [ ] A comment that explains code
+
+**Q2.** Which is *not* a primitive data type in many languages?
+- [ ] Integer  
+- [ ] String  
+- [ ] Boolean  
+- [ ] Function *(in many languages, functions are first-class but not primitive)*
+
+---
+
+## 2) Fill in the Blanks
+
+**Q3.** A `string` is a sequence of __________ characters.
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+**Q4.** A `boolean` value can only be __________ or __________.
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+**Q5.** The symbol for exponentiation in many languages is `^`, so `3 ^ 2` means __________.
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+---
+
+## 3) Code Tracing
+
+```python
+# Given this code:
+a = 5
+b = 2
+c = a ^ b  # Q5: What is the value of c after this line?
+print(c)   # Q6: What does this line output?
+```
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+---
+
+## 4) Practical Exercises
+
+**Q7.** Create a variable `name` and assign it your first name. Then, print a greeting that uses your name.
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+**Q8.** Write a line of code that converts the string `"123"` to an integer and assigns it to a variable `num`.
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+**Q9.** What will be the output of the following code? Explain why.
+```python
+x = "Hello, "
+y = "world!"
+print(x + y)
+```
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+---
+
+## 5) Reflection
+
+**Q10.** What was the most challenging part of this worksheet for you? Why?
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+**Q11.** How do you feel about using variables and data types after completing this worksheet?
+
+```{=openxml}
+<w:p><w:r><w:t>Type here…</w:t></w:r></w:p>
+```
+
+---

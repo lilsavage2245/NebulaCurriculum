@@ -1,36 +1,34 @@
-/* Nebula brand theme (HTML/PDF) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap');
+/*-- scss:defaults --*/
+$nebula-blue: #08796a;
+$nebula-accent: #f7c948;
+$body-bg: #ffffff;
+$body-color: #111827;
+$link-color: $nebula-blue;
+$code-color: #0d9488;
 
-:root {
-  --nebula-deep: #150879;
-  --nebula-gold: #FFC940;
-  --ink: #101012;
-  --muted: #666a73;
-}
-
-body {
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  color: var(--ink);
+/*-- scss:rules --*/
+.navbar, .quarto-title-banner {
+  background: $nebula-blue;
+  a, .navbar-brand { color: #141212 !important; }
 }
 
 h1, h2, h3 {
-  font-weight: 700;
-  color: var(--nebula-deep);
+  color: $nebula-blue;
+  font-weight: 800;
+  letter-spacing: 0.2px;
 }
 
-a { color: var(--nebula-deep); }
-a:hover { color: #0f0660; }
-
-/* Code */
-code, pre { font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-
-/* Callouts */
-.callout-title {
-  background: var(--nebula-deep);
-  color: #fff;
+.callout-tip {
+  border-left: 4px solid $nebula-accent;
 }
 
-.quarto-title-banner {
-  background: linear-gradient(180deg, rgba(21,8,121,0.12), rgba(21,8,121,0.0));
-  border-bottom: 2px solid var(--nebula-gold);
+/* print-friendly pdf tweaks */
+@media print {
+  a[href]:after { content: " (" attr(href) ")"; font-size: 0.85em; }
 }
+
+/*-- scss:mixins --*/
+/* (optional) */
+
+/*-- scss:functions --*/
+/* (optional) */

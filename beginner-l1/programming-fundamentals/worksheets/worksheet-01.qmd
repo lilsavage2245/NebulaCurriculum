@@ -1,0 +1,31 @@
+---
+title: "Worksheet 01 — Getting Started"
+format:
+  docx: default    # primary student format (editable)
+  pdf: default     # optional printable
+number-sections: false
+---
+
+> **Instructions:** Answer inside the gray boxes. Save your DOCX and upload it to your dashboard.
+
+### 1) Definitions
+
+**Q:** In your own words, what is *programming*?
+**A:** _Type your answer here..._
+
+### 2) Everyday Algorithms
+
+**Q:** Describe an everyday algorithm you followed today.
+**A:** _Type your answer here..._
+
+### 3) Install Checklist (tick ✓)
+
+- [ ] Installed Python 3.x
+- [ ] Installed VS Code
+- [ ] Installed the Python extension
+
+_Tick by replacing [ ] with [x]_
+
+### 4) Short Reflection (3–5 sentences)
+
+**A:** _Type your answer here..._
