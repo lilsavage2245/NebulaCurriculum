@@ -4,6 +4,9 @@ project:
   preview:
     port: 4200
     browser: true
+  resources:
+    - "**/*.pdf"
+    - "**/*.docx"
 
 website:
   title: "Nebula Curriculum"

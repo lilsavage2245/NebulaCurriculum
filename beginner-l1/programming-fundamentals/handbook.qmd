@@ -16,6 +16,12 @@ params:
 filters: []
 ---
 
+::: {.btn-group role="group" aria-label="handbook-actions"}
+[⬇️ Download PDF](handbook.pdf){.btn .btn-primary .me-2}
+[🖥️ View Slides (L01)](slides/L01-intro.html){.btn .btn-outline-primary}
+:::
+
+
 > **Tagline:** *Think logically. Code clearly. Start building.*
 
 ::: {.callout-tip}
